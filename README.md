@@ -4,7 +4,7 @@
 1. First of all, LLM transforms user's query into several queries like "What is the weather in 'location' on 'date'", and then parses it, and returns output as list of this queries.
 2. Then, another LLM parses parameters 'location' and 'date' from each query.
 3. On the next step - we use API from `https://api.open-meteo.com` to retrieve weather data for necessary location on necessary date (could be historical data, current data or future forecasts).
-4. Finally, it transforms information from retrieved weather data and original user's query into user-friendly format.
+4. Finally, it transforms information from retrieved weather data and original user's query into answer in user-friendly format.
 
 ## To run web application locally:
 1. Write `docker-compose up --build` in the terminal of project's directory.
